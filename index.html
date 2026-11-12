@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050505"><title>ARCHIVE // RIPKI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><div class="noise"></div><main class="screen">
+<section id="intro" class="panel">
+  <div class="terminal">SIGNAL_07 // ARCHIVE</div><div class="warning">[ CONNECTION UNSTABLE ]</div>
+  <h1>JANGAN TERLALU LAMA DI SINI.</h1>
+  <p class="glitch" data-text="Sebuah catatan kecil sedang menunggu jawaban kalian.">Sebuah catatan kecil sedang menunggu jawaban kalian.</p>
+  <p class="tiny">Tidak ada jawaban yang "aman". Jawab dari sudut pandang kalian sendiri.</p>
+  <div class="fake-area"><button class="fake-btn" id="fakeBtn">[ AKSES FILE ]</button> <span id="fakeMsg"></span></div>
+  <div class="choice"><p class="question-big">mau lanjut atau keluar?</p><button class="continue" id="continue1">LANJUT</button><button class="continue" id="continue2">KELUAR</button></div>
+</section>
+<section id="nameScreen" class="panel hidden"><div class="terminal">IDENTITY CHECK</div><h2>sebelum masuk...</h2><p class="tiny">Tulis nama/panggilan kalian. Data tersimpan di browser perangkat ini.</p><input id="name" maxlength="60" placeholder="nama / panggilan..." autocomplete="off"><button class="continue" id="startBtn">MASUK</button><p id="nameError" class="error"></p></section>
+<section id="survey" class="panel hidden"><div class="terminal">INTERVIEW LOG // <span id="counter">01/05</span></div><p class="small">jawab sesuai pandangan kalian...</p>
+  <div class="question active" data-q="1"><h2>1. ripki lagi kenapa?</h2><textarea id="q1" maxlength="1000" placeholder="ketik jawaban kalian..."></textarea><button class="next">LANJUT</button></div>
+  <div class="question" data-q="2"><h2>2. kalau kalian dimintain tolong buat bawa barangnya ripki, kalian bantu ga?</h2><textarea id="q2" maxlength="1000" placeholder="ketik jawaban kalian..."></textarea><button class="next">LANJUT</button></div>
+  <div class="question" data-q="3"><h2>3. ripki suka gambar apa?</h2><div class="options"><button class="option" data-value="doodle">DOODLE</button><button class="option" data-value="anime">ANIME</button><button class="option" data-value="manekin">GAMBAR MANEKIN</button></div><p id="choiceText" class="selected"></p><button class="next">LANJUT</button></div>
+  <div class="question" data-q="4"><h2>4. hal apa yg menurut kalian aneh dan kalian ga suka dari ripki?</h2><textarea id="q4" maxlength="1000" placeholder="ketik jawaban kalian..."></textarea><button class="next">LANJUT</button></div>
+  <div class="question" data-q="5"><h2>5. kalian seneng ga sih sama kehadiran ripki?</h2><textarea id="q5" maxlength="1000" placeholder="ketik jawaban kalian..."></textarea><button class="submit" id="submitBtn">SIMPAN KE ARSIP</button></div>
+  <p id="submitStatus" class="tiny" aria-live="polite"></p>
+</section>
+<section id="done" class="panel hidden"><div class="terminal">TRANSMISSION COMPLETE</div><h1>jawaban diterima.</h1><p>Respons tersimpan di browser ini.</p><p class="tiny">Kalian bisa menutup halaman ini.</p></section>
+</main><script src="app.js"></script></body></html>
